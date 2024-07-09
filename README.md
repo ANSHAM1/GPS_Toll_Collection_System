@@ -1,4 +1,4 @@
-#GPS Based Toll Collection System
+# GPS Based Toll Collection System
 
 ## Overview
 This project is a vehicle toll tracking system that uses GPS coordinates to determine if a vehicle is on a toll road. The system integrates with a REST API, processes GPS data, and calculates toll fees based on the vehicle's distance traveled on toll roads.
