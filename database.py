@@ -33,7 +33,7 @@ class MongoDBManager:
         return updated_doc.modified_count
 
 
-uri = "mongodb+srv://anshammaurya2291:ansham123@cluster1.qyllrbx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1"
+uri = ""
 db_name = "GPSBasedTollSimulation"
 
 
