@@ -9,13 +9,9 @@ In today's fast-paced world, efficient toll collection is crucial for maintainin
 ## Features
 - **Entity Tracking**: Manage vehicle information and track their travel distance.
 - **GeoJSON Integration**: Load national highways and toll zones from GeoJSON files.
-- **API Integration**: Use the OSRM API to calculate the distance between GPS coordinates.
-- **Flask Server**: Receive GPS coordinates via a POST request and process them to check if the vehicle is on a toll road.
-- **Toll Calculation**: Calculate toll fees based on the distance traveled.
-- **Privacy Concern**: Encrypt and decrypt data on the client and server side.
-
-## GPS
-GPS.py mimic the google map which continously send the car current location in form of coordinates to the server.
+- **Distance Calculation**: Use the displacement formula for very short change in coordinates and adding them up to get correct distance travelled.
+- **Flask Server with Socket.io**: Socket.io keeps the sending of coordinates in loop till the car stops.
+- **Toll Calculation**: Calculate toll fees based on the distance traveled
 
 ## Installation
 1. Clone the repository:
@@ -24,19 +20,21 @@ GPS.py mimic the google map which continously send the car current location in f
     ```
 2. Navigate to the project directory:
     ```bash
-    cd vehicle-toll-tracking
+    cd GPS_Toll_Collection_System
     ```
-3. Create and activate a virtual environment:
+3. Install the required packages:
     ```bash
-    python -m venv venv
-    source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+    pip install Flask flask_socketio flask_cors eventlet GeoPandas Shapely pymongo
     ```
-4. Install the required packages:
-    ```bash
-    pip install Flask GeoPandas Requests Shapely cryptography pymongo
-    ```
-5. Unzip the zip file present in the `geo_data` folder using an unzipping app like WinRAR.
-
+4. Unzip the zip file present in the `Backend/NH_DATA` folder using an unzipping app like `WinRAR` and copy the geojson file to `Backend/NH_DATA` folder.
+5. Navigate to Frontend:
+   ```bash
+   cd Frontend
+   ```
+6. Install all modules:
+   ```
+   npm install
+   ```
 ## How to Run:
 1. Navigate to the Root directory:
     ```bash
