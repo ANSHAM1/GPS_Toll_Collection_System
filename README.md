@@ -6,12 +6,16 @@ This project is a vehicle toll tracking system that uses GPS coordinates to dete
 ## Project Background
 In today's fast-paced world, efficient toll collection is crucial for maintaining smooth traffic flow and reducing congestion at toll booths. Traditional methods like manual toll collection and FASTag have limitations. This project aims to develop an advanced and efficient toll collection system using GPS technology.
 
-## Features
+## Features in Backend
 - **Entity Tracking**: Manage vehicle information and track their travel distance.
 - **GeoJSON Integration**: Load national highways and toll zones from GeoJSON files.
 - **Distance Calculation**: Use the displacement formula for very short change in coordinates and adding them up to get correct distance travelled.
 - **Flask Server with Socket.io**: Socket.io keeps the sending of coordinates in loop till the car stops.
 - **Toll Calculation**: Calculate toll fees based on the distance traveled
+
+## Features in Frontend
+- **Simulation Speed**: Speed of simulation can be adjust by sliding the bar.
+- **Connecctivity**: Frontend waits for backend to connect properly then the run simulation button get activated. 
 
 ## Installation
 1. Clone the repository:
@@ -40,22 +44,11 @@ In today's fast-paced world, efficient toll collection is crucial for maintainin
     ```bash
     cd GPS_Toll_Collection_System
     ```
-2. Run the `flask_server.py` script:
+2. Run the `socket_server.py` script:
     ```bash
-    python flask_server.py
+    python socket_server.py
     ```
-3. Run the GPS.py to send the coordinates:
+3. Run the React Frontend:
     ```bash
-    python GPS/GPS.py
-    ```
-3. Open any browser:
-   1.For viewing car location and distance travelled
-    ```bash
-    http://localhost:5000/
-    ```
-   2.For zones and other info
-   ```bash
-    http://localhost:5000/car_path
-    http://localhost:5000/square_zones
-    http://localhost:5000/toll_roads
+    npm run dev
     ```
