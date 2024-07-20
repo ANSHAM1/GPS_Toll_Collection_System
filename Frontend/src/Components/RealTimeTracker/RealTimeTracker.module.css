@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.left {
+  height: 90%;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  height: 90%;
+  width: 45%;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 50px;
+  height: 100px;
+  width: 550px;
+  background-color: rgba(0, 0, 0, 0.658);
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.info h3 span {
+  color: rgb(255, 36, 73);
+}
+
+.btn {
+  position: fixed;
+  top: 30px;
+  right: 100px;
+  height: 50px;
+  width: 300px;
+  background-color: rgb(255, 36, 73, 0.6);
+  color: #212121;
+  border: 2px solid #212121;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.btnDisabled {
+  position: fixed;
+  top: 30px;
+  right: 100px;
+  height: 50px;
+  width: 300px;
+  background-color: #212121;
+  color: rgb(255, 36, 73, 0.6);
+  border: 2px solid #212121;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.speed{
+  position: fixed;
+  top: 45px;
+  right: 450px;
+  width: 200px;
+  height: 10px;
+  -webkit-appearance: none;
+  border-radius: 20px; 
+  background-color: #ff0547;
+}
+
+.speed::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 20px; 
+  height: 20px;
+  background: #dedede;
+  border-radius: 20px; 
+  cursor: pointer;
+}
+
+.speed::-moz-range-thumb {
+  width: 20px; 
+  height: 20px;
+  background: #212121;
+  border-radius: 20px; 
+  cursor: pointer;
+}
