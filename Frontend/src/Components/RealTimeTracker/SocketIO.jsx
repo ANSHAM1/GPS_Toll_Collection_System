@@ -84,7 +84,7 @@ const SocketComponent = ({ handleProps, handleCurrent, handleEnvoices }) => {
             min="1"
             max="60"
             value={speed}
-            onChange={(e) => setSpeed(e.target.value)}
+            onChange={(e) => setSpeed(Number(e.target.value))}
           ></input>
         </>
       ) : (
@@ -98,7 +98,7 @@ const SocketComponent = ({ handleProps, handleCurrent, handleEnvoices }) => {
             min="1"
             max="60"
             value={speed}
-            onChange={(e) => setSpeed(e.target.value)}
+            onChange={(e) => setSpeed(Number(e.target.value))}
           ></input>
         </>
       )}
