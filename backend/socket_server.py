@@ -4,7 +4,7 @@ import random
 import time
 
 #database connectivity
-uri = "mongodb+srv://anshammaurya2291:ansham123@cluster1.qyllrbx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1"
+uri = "enter your mongo db atlas uri and create the below db and collection with proper entries"
 dbName = "GPSBasedTollSimulation"
 collection = "Users"
 
