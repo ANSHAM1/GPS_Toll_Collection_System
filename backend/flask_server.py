@@ -2,7 +2,7 @@ from ClassOrganizer import Organizer, FileReader # type: ignore
 from DBManager import MongoDB # type: ignore
 
 #database connectivity
-uri = "mongodb+srv://anshammaurya2291:ansham123@cluster1.qyllrbx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1"
+uri =""
 dbName = "GPSBasedTollSimulation"
 collection = "Users"
 
